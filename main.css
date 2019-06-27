@@ -4,11 +4,12 @@
   padding: 0px;
   text-decoration: none;
   color: black;
+  max-width: 100vw;
 }
 .page-container {
+  background-image: url(./public/images/nitish-meena-RbbdzZBKRDY-unsplash.jpg);
   background-color: darkblue;
   min-height: 200vh;
-  max-width: 100vw;
   display: grid;
   grid-template-rows: 85vh auto;
   grid-template-areas:
@@ -41,6 +42,8 @@
 }
 .page-previews {
   grid-area: previews;
+  max-width: 100vw;
+  overflow-x: auto;
 }
 .page-desc {
   grid-area: desc;
@@ -57,7 +60,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  overflow-x: auto;
 }
 .page-nav > ul li {
   margin: 10px;
@@ -67,7 +69,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: stretch;
 }
 .page-previews > ul > li img {
