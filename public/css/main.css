@@ -39,7 +39,7 @@ h6 {
   background-color: aliceblue;
   grid-area: page-content;
   display: grid;
-  grid-template-rows: 1fr 1fr 50px;
+  grid-template-rows: auto 1fr 50px;
   grid-template-areas:
     'desc'
     'projects'
