@@ -94,7 +94,7 @@ h6 {
   width: auto;
   margin: 5px;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 769px) and (max-height: 1025px) {
   .page-container {
   }
   .page-banner {
@@ -119,35 +119,6 @@ h6 {
   }
   .page-previews > ul {
     justify-content: center;
-  }
-  .page-previews > ul > li img {
-  }
-}
-@media screen and (min-width: 680px) and (min-height: 1024px) {
-  .page-container {
-  }
-  .page-banner {
-  }
-  .page-content {
-  }
-  .page-nav {
-  }
-  .page-previews {
-  }
-  .page-home {
-  }
-  .page-desc {
-  }
-  .page-projects {
-  }
-  .page-contact-us {
-  }
-  .page-nav > ul {
-  }
-  .page-nav > ul li {
-  }
-  .page-previews > ul {
-    justify-content: flex-start;
   }
   .page-previews > ul > li img {
   }
