@@ -123,3 +123,32 @@ h6 {
   .page-previews > ul > li img {
   }
 }
+@media screen and (min-width: 680px) and (min-height: 1024px) {
+  .page-container {
+  }
+  .page-banner {
+  }
+  .page-content {
+  }
+  .page-nav {
+  }
+  .page-previews {
+  }
+  .page-home {
+  }
+  .page-desc {
+  }
+  .page-projects {
+  }
+  .page-contact-us {
+  }
+  .page-nav > ul {
+  }
+  .page-nav > ul li {
+  }
+  .page-previews > ul {
+    justify-content: flex-start;
+  }
+  .page-previews > ul > li img {
+  }
+}
