@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: black;
+}
+.page-container {
+  background-color: darkblue;
+  min-height: 200vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 85vh auto;
+  grid-template-areas:
+    'banner'
+    'page-content';
+  grid-gap: 10px;
+}
+.page-banner {
+  max-height: 20vh;
+  background-color: gray;
+  grid-area: banner;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  grid-template-areas:
+    'nav'
+    'previews';
+}
+.page-content {
+  background-color: gray;
+  grid-area: page-content;
+  display: grid;
+  grid-template-rows: 1fr 1fr 50px;
+  grid-template-areas:
+    'desc'
+    'projects'
+    'contact-us';
+}
+.page-nav {
+  grid-area: nav;
+}
+.page-previews {
+  grid-area: previews;
+}
+.page-desc {
+  grid-area: desc;
+}
+.page-projects {
+  grid-area: projects;
+}
+.page-contact-us {
+  grid-area: contact-us;
+}
+.page-nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.page-nav > ul li {
+  margin: 10px;
+}
+.page-previews > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  overflow-x: auto;
+}
+.page-previews > ul > li img {
+  background-color: gray;
+}
+.page-container div div {
+  background-color: lightblue;
+}
