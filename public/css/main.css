@@ -80,3 +80,30 @@
   width: auto;
   margin: 5px;
 }
+@media screen and (min-width: 680px) {
+  .page-container {
+  }
+  .page-banner {
+  }
+  .page-content {
+  }
+  .page-nav {
+  }
+  .page-previews {
+  }
+  .page-desc {
+  }
+  .page-projects {
+  }
+  .page-contact-us {
+  }
+  .page-nav > ul {
+  }
+  .page-nav > ul li {
+  }
+  .page-previews > ul {
+    justify-content: center;
+  }
+  .page-previews > ul > li img {
+  }
+}
