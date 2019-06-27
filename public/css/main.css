@@ -17,7 +17,7 @@ h6 {
 .page-container {
   min-height: 200vh;
   display: grid;
-  grid-template-rows: 99vh auto;
+  grid-template-rows: 100vh auto;
   grid-template-areas:
     'banner'
     'page-content';
