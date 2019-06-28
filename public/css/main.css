@@ -5,8 +5,8 @@
   text-decoration: none;
   color: black;
   max-width: 100%;
-  font-family: Campton, Umpush, Courier, monospace;
-  font-size: 18px;
+  font-family: Raleway, Umpush, Courier, monospace;
+  font-size: 14px;
   overflow-x: hidden;
 }
 h1,
@@ -20,7 +20,16 @@ h6 {
   margin: 10px 0px 20px 0px;
 }
 h1 {
-  font-size: 50px;
+  font-size: 60px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Pacifico, Raleway, Umpush, Courier, monospace;
+  text-transform: capitalize;
+  font-size: 18px;
 }
 .page-container {
   min-height: 200vh;
@@ -122,6 +131,12 @@ h1 {
   justify-content: center;
 }
 @media screen and (min-width: 540px) {
+  * {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 70px;
+  }
   .page-desc {
     flex-direction: row;
     justify-content: space-evenly;
@@ -131,19 +146,6 @@ h1 {
   }
 }
 @media screen and (min-width: 750px) and (min-height: 720px) {
-  * {
-    font-size: 20px;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0px 20px 0px;
-  }
   h1 {
     font-size: 72px;
   }
