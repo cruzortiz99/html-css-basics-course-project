@@ -21,6 +21,7 @@ h6 {
 }
 h1 {
   font-size: 60px;
+  color: white;
 }
 h2,
 h3,
@@ -41,7 +42,7 @@ h6 {
 }
 .page-banner {
   background-color: gray;
-  background-image: url('../images/nitish-meena-RbbdzZBKRDY-unsplash.jpg');
+  background-image: url('../images/portada\ eventos.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: banner;
@@ -128,7 +129,13 @@ h6 {
 .page-contact-us {
   grid-area: contact-us;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+.page-contact-rrss {
+  max-height: 40px;
+  width: auto;
+  margin: 0 20px 0 20px;
 }
 @media screen and (min-width: 540px) {
   * {
