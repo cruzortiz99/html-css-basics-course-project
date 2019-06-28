@@ -29,7 +29,7 @@ h6 {
   background-repeat: no-repeat;
   grid-area: banner;
   display: grid;
-  grid-template-rows: 40px 20vh auto;
+  grid-template-rows: 40px auto auto;
   grid-template-areas:
     'nav'
     'previews'
@@ -50,10 +50,10 @@ h6 {
   grid-area: nav;
 }
 .page-previews {
-  grid-area: previews;
   max-width: 100vw;
+  grid-area: previews;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: visible;
 }
 .page-home {
   grid-area: home;
@@ -88,18 +88,17 @@ h6 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-content: stretch;
 }
-.page-previews > ul > li img {
+.page-previews > ul > li a img {
   background-color: gray;
-  max-height: 20vh;
+  max-height: 200px;
   width: auto;
   margin: 5px;
 }
 .page-desc-section {
   margin: 20px 0px 20px 0px;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 480px) {
   .page-container {
   }
   .page-banner {
@@ -126,11 +125,14 @@ h6 {
   .page-nav > ul li {
   }
   .page-previews > ul {
-    justify-content: center;
   }
-  .page-previews > ul > li img {
+  .page-previews > ul > li > a img {
   }
   .page-desc-section {
-    max-width: 30vw;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .page-previews > ul {
+    justify-content: center;
   }
 }
