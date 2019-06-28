@@ -4,7 +4,10 @@
   padding: 0px;
   text-decoration: none;
   color: black;
-  max-width: 100vw;
+  max-width: 100%;
+  font-family: Campton, Umpush, Courier, monospace;
+  font-size: 18px;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -13,13 +16,11 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-size: 24px;
   text-align: center;
   margin: 10px 0px 20px 0px;
 }
-a,
-p {
-  font-size: 18px;
+h1 {
+  font-size: 50px;
 }
 .page-container {
   min-height: 200vh;
@@ -94,10 +95,31 @@ p {
   flex-direction: column;
 }
 .page-project {
-  background-color: lightgray;
+  margin: 10px 0 10px 0;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+.page-project-img {
+  width: 100%;
+  height: 100%;
+  grid-area: span 1 / span 1;
+}
+.page-project-img-horizontal {
+  grid-column: span 2;
+}
+.page-project-img-vertical {
+  grid-row: span 2;
+}
+.page-project-img-big {
+  grid-area: span 2 / span 2;
 }
 .page-contact-us {
   grid-area: contact-us;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 540px) {
   .page-desc {
@@ -109,6 +131,9 @@ p {
   }
 }
 @media screen and (min-width: 750px) and (min-height: 720px) {
+  * {
+    font-size: 20px;
+  }
   h1,
   h2,
   h3,
@@ -116,12 +141,11 @@ p {
   h5,
   h6 {
     text-transform: uppercase;
-    font-size: 30px;
     text-align: center;
+    margin: 10px 0px 20px 0px;
   }
-  a,
-  p {
-    font-size: 24px;
+  h1 {
+    font-size: 72px;
   }
   .page-banner {
     grid-template-rows: 40px max-content auto;
