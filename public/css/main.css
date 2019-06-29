@@ -163,9 +163,12 @@ h6 {
       'previews'
       'home';
   }
+  a {
+    color: white;
+  }
   .page-nav {
     position: static;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .page-previews {
     display: inline-block;
