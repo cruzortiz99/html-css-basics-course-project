@@ -8,6 +8,11 @@
 html {
   background-color: darkblue;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 div {
   width: 300px;
   height: auto;
@@ -15,4 +20,5 @@ div {
 }
 ul > li {
   display: block;
+  font-size: 3vh;
 }
