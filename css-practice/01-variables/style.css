@@ -1,0 +1,28 @@
+:root {
+  --page-color: darkblue;
+  --div-color: lightblue;
+  --box-size-width: 30vw;
+  --box-size-height: 30vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+html {
+  background-color: var(--page-color);
+}
+div {
+  background-color: var(--div-color);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app {
+  height: var(--box-size-height);
+  width: var(--box-size-width);
+}

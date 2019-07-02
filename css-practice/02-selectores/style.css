@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+html {
+  background-color: darkblue;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+div {
+  background-color: lightblue;
+  height: 100px;
+  width: 100px;
+}
+#app {
+  background-color: green;
+}
+.primera-clase {
+  background-color: yellowgreen;
+}
+div[segunda='segunda'] {
+  border-style: groove;
+  border-width: 10px;
+}
+body > div {
+  border-radius: 50%;
+}
+.primera-clase ~ .segunda-clase {
+  align-self: flex-start;
+}
+#app + div {
+  align-self: flex-end;
+}
