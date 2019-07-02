@@ -99,10 +99,6 @@ h6 {
 }
 .page-previews {
   display: none;
-  animation: fade;
-  animation-delay: 0s;
-  animation-duration: 7s;
-  animation-timing-function: var(--animation-timing);
 }
 .page-content {
   background-color: var(--page-color);
@@ -170,11 +166,13 @@ h6 {
 }
 @keyframes fade {
   from {
-    padding-top: 100px;
+    position: relative;
+    top: 100px;
     opacity: 0;
   }
   to {
-    padding: 0px;
+    position: relative;
+    top: 0px;
     opacity: 1;
   }
 }
@@ -214,8 +212,11 @@ h6 {
   .page-previews {
     display: flex;
     justify-content: center;
-    overflow: auto;
     max-height: 250px;
+    animation: fade;
+    animation-delay: 0s;
+    animation-duration: 7s;
+    animation-timing-function: var(--animation-timing);
   }
   .page-previews > ul {
     list-style: none;
