@@ -32,10 +32,6 @@ h6 {
 h1 {
   font-size: 60px;
   color: var(--welcome-font-color);
-  animation-name: fade;
-  animation-fill-mode: backwards;
-  animation-duration: 3s;
-  animation-timing-function: var(--animation-timing);
 }
 h2,
 h3,
@@ -116,14 +112,11 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .page-desc-section {
   margin: 20px 0px 20px 0px;
   max-width: 90vw;
-  animation-name: fade;
-  animation-fill-mode: backwards;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
 }
 .page-projects {
   grid-area: projects;
@@ -164,18 +157,6 @@ h6 {
   width: auto;
   margin: 0 20px 0 20px;
 }
-@keyframes fade {
-  from {
-    position: relative;
-    top: 100px;
-    opacity: 0;
-  }
-  to {
-    position: relative;
-    top: 0px;
-    opacity: 1;
-  }
-}
 @media screen and (min-width: 540px) {
   * {
     font-size: 20px;
@@ -213,10 +194,6 @@ h6 {
     display: flex;
     justify-content: center;
     max-height: 250px;
-    animation: fade;
-    animation-delay: 0s;
-    animation-duration: 7s;
-    animation-timing-function: var(--animation-timing);
   }
   .page-previews > ul {
     list-style: none;
@@ -233,4 +210,38 @@ h6 {
     width: auto;
     margin: 5px;
   }
+}
+
+@keyframes fade {
+  from {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+.fade-animation-3 {
+  animation-name: fade;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  animation-timing-function: var(--animation-timing);
+}
+.fade-animation-5 {
+  animation-name: fade;
+  animation-fill-mode: backwards;
+  animation-duration: 5s;
+  animation-timing-function: var(--animation-timing);
+}
+.fade-animation-7 {
+  animation: fade;
+  animation-fill-mode: backwards;
+  animation-duration: 7s;
+  animation-timing-function: var(--animation-timing);
+}
+.animation-delay-2 {
+  animation-delay: 2s;
 }
