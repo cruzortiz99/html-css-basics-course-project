@@ -1,3 +1,7 @@
+:root {
+  --main-fonts-set: Raleway, Umpush, Courier, monospace;
+  --animation-timing: ease-in-out;
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -5,7 +9,7 @@
   text-decoration: none;
   color: black;
   max-width: 100%;
-  font-family: Raleway, Umpush, Courier, monospace;
+  font-family: var(--main-fonts-set);
   font-size: 14px;
   overflow-x: hidden;
 }
@@ -22,6 +26,10 @@ h6 {
 h1 {
   font-size: 60px;
   color: white;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-timing-function: var(--animation-timing);
 }
 h2,
 h3,
@@ -57,17 +65,25 @@ h6 {
   position: fixed;
   top: 0;
   width: 100vw;
+  height: 40px;
   background-color: lightgray;
 }
 .page-nav > ul {
+  height: 100%;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
 }
-.page-nav > ul li {
-  margin: 10px;
+.page-nav li {
+  height: 100%;
+  margin: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+}
+.page-nav li:hover {
+  background-color: gray;
 }
 .page-home {
   grid-area: home;
@@ -77,6 +93,10 @@ h6 {
 }
 .page-previews {
   display: none;
+  animation: fade;
+  animation-delay: 0s;
+  animation-duration: 7s;
+  animation-timing-function: var(--animation-timing);
 }
 .page-content {
   background-color: aliceblue;
@@ -98,6 +118,10 @@ h6 {
 .page-desc-section {
   margin: 20px 0px 20px 0px;
   max-width: 90vw;
+  animation-name: fade;
+  animation-delay: 1s;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
 }
 .page-projects {
   grid-area: projects;
@@ -117,6 +141,7 @@ h6 {
   height: 100%;
   grid-area: span 1 / span 1;
 }
+
 .page-project-img-horizontal {
   grid-column: span 2;
 }
@@ -136,6 +161,16 @@ h6 {
   max-height: 40px;
   width: auto;
   margin: 0 20px 0 20px;
+}
+@keyframes fade {
+  from {
+    padding-top: 100px;
+    opacity: 0;
+  }
+  to {
+    padding: 0px;
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 540px) {
   * {
