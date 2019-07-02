@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: darkblue;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+body > div {
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+}
