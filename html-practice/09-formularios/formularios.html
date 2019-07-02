@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <form action="#" method="post" style="display: flex; flex-direction: column">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" required autofocus />
+    <label for="mail">Correo</label>
+    <input type="email" name="mail" required>
+    <label for="birthDate">Fecha de nacimiento</label>
+    <input type="date" name="birthDate">
+    <label for="ci">Cédula</label>
+    <input type="number" min="5000000" max="40000000" required>
+    <label for="remark">Comentario</label>
+    <textarea name="remark" cols="30" rows="30"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
