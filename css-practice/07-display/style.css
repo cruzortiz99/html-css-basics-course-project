@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+html {
+  background-color: darkblue;
+}
+div {
+  width: 300px;
+  height: auto;
+  background-color: lightblue;
+}
+ul > li {
+  display: block;
+}
