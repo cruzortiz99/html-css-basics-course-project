@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+html {
+  background-color: darkblue;
+  height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  background-color: lightblue;
+  min-height: 100px;
+  height: auto;
+  width: 30vw;
+}
+.contained {
+  background-color: lightcyan;
+  margin: 100px 0 100px 0;
+  padding: 50px;
+}
