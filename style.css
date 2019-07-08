@@ -17,7 +17,7 @@ body {
     'header header'
     'nav main';
   grid-template-columns: 20vw;
-  grid-template-rows: 20vh auto;
+  grid-template-rows: 15vh auto;
 }
 .header {
   grid-area: header;
@@ -25,17 +25,24 @@ body {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  box-shadow: black 30px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+  z-index: 1;
 }
 .nav {
   grid-area: nav;
+  padding-top: 10px;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px;
+  z-index: 2;
 }
 .main {
   grid-area: main;
+  overflow-y: auto
 }
 .main > iframe {
   height: 100%;
   width: 100%;
+  border: none;
 }
 .nav > ul {
   display: flex;
@@ -43,10 +50,12 @@ body {
 }
 .nav > ul li {
   padding-left: 15px;
+  min-height: 30px;
 }
 .nav > ul li:hover {
   background-color: darkblue;
 }
 .nav h3 {
   text-transform: capitalize;
+  min-height: 30px;
 }
