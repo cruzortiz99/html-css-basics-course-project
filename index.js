@@ -67,50 +67,38 @@ navHtml10.addEventListener('click', (event) => {
 })
 // CSS
 navCss01.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/01-css_js/css_js.html')
+  preview.setAttribute('src', './css-practice/01-variables/index.html')
 })
 navCss02.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/02-divs/div.html')
+  preview.setAttribute('src', './css-practice/02-selectores/index.html')
 })
 navCss03.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/03-layouts/layout.html')
+  preview.setAttribute('src', './css-practice/03-pseudo-clases/index.html')
 })
 navCss04.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/04-header/headers.html')
+  preview.setAttribute('src', './css-practice/04-pseudo-elementos/index.html')
 })
 navCss05.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/05-parrafos/parrafos.html')
+  preview.setAttribute('src', './css-practice/05-grid/index.html')
 })
 navCss06.addEventListener('click', (event) => {
-  if (preview.getAttribute('src') === './html-practice/06-imagenes/img.html') {
-    preview.setAttribute('src', './html-practice/06-imagenes/img2.html')
-  } else {
-    preview.setAttribute('src', './html-practice/06-imagenes/img.html')
-  }
+  preview.setAttribute('src', './css-practice/06-flexbox/index.html')
 })
 navCss07.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/07-audio/audio.html')
+  preview.setAttribute('src', './css-practice/07-display/index.html')
 })
 navCss08.addEventListener('click', (event) => {
-  if (preview.getAttribute('src') === './html-practice/08-videos/video.html') {
-    preview.setAttribute('src', './html-practice/08-videos/video2.html')
-  } else {
-    preview.setAttribute('src', './html-practice/08-videos/video.html')
-  }
+  preview.setAttribute('src', './css-practice/08-position/index.html')
 })
 navCss09.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/09-formularios/formularios.html')
+  preview.setAttribute('src', './css-practice/09-margin-padding/index.html')
 })
 navCss10.addEventListener('click', (event) => {
-  if (preview.getAttribute('src') === './html-practice/10-tablas/tablas.html') {
-    preview.setAttribute('src', './html-practice/10-tablas/tablas2.html')
-  } else {
-    preview.setAttribute('src', './html-practice/10-tablas/tablas.html')
-  }
+  preview.setAttribute('src', './css-practice/10-styling/index.html')
 })
 navCss11.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/09-formularios/formularios.html')
+  preview.setAttribute('src', './css-practice/11-responsive/index.html')
 })
 navCss12.addEventListener('click', (event) => {
-  preview.setAttribute('src', './html-practice/09-formularios/formularios.html')
+  preview.setAttribute('src', './css-practice/12-animations/index.html')
 })
