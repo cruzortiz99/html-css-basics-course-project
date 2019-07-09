@@ -7,10 +7,24 @@ html {
   background-color: darkblue;
 }
 body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  "theory theory"
+  "code example";
+  grid-template-columns: 1fr 1fr;
+}
+.theory {
+  grid-area: theory;
+}
+.code {
+  grid-area: code;
+}
+.example {
+  grid-area: example;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 #app {
   background-color: lightblue;
