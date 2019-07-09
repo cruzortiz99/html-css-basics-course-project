@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color: darkblue;
+  background-color: aliceblue;
 }
 body {
   min-height: 100vh;
@@ -13,14 +13,14 @@ body {
     'theory'
     'code'
     'example';
-  grid-template-rows: auto;
+  grid-template-rows: auto min-content auto;
 }
 .theory {
   grid-area: theory;
 }
 .code {
   grid-area: code;
-  background-color: beige;
+  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,9 +36,15 @@ body {
   min-height: 25vh;
   width: 25vw;
 }
+h1 {
+  text-align: center;
+}
 span {
   width: 100%;
   word-wrap: break-word;
+}
+.tag {
+  color: blue;
 }
 .tag::before {
   content: '<';
@@ -52,7 +58,8 @@ span {
   content: '</';
   color: blue;
 }
-.comment-tag {
+.comment-tag,
+.comment-tag span {
   color: gray;
 }
 .comment-tag::before {
@@ -60,4 +67,7 @@ span {
 }
 .comment-tag::after {
   content: '-->';
+}
+.tag-attribute {
+  color: red;
 }
