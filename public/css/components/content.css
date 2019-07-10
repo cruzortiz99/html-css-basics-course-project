@@ -2,17 +2,18 @@
   --page-color: aliceblue;
   --page-section-space-between: 20px;
   --font-size: 16px;
-  --text-padding: 15px 0px 15px 0px;
+  --content-padding: 15px 0px 15px 0px;
   --paragraphs-width: 80%;
   --theory-header-margin: 0px 0px 15px 0px;
   --theory-line-height: calc(var(--font-size) * 1.5);
   --code-border-radius: 10px;
   --code-width: 90%;
   --code-color: lightgray;
+  --code-comment-color: gray;
   --shadows: rgba(0, 0, 0, 0.3) 0px 2px 4px;
   --html-tag-color: blue;
   --html-attribute-color: red;
-  --code-comment-color: gray;
+  --example-color: rgba(0, 0, 255, 0.7);
 }
 * {
   margin: 0;
@@ -23,12 +24,13 @@ html {
   background-color: var(--page-color);
 }
 body {
+  padding: var(--content-padding);
   min-height: 100vh;
   display: grid;
   grid-template-areas:
+    'example'
     'theory'
-    'code'
-    'example';
+    'code';
   grid-template-rows: auto min-content auto;
   grid-gap: var(--page-section-space-between);
 }
@@ -37,7 +39,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--text-padding);
 }
 .theory h1 {
   text-align: center;
@@ -51,6 +52,7 @@ body {
   line-height: var(--theory-line-height);
   font-size: var(--font-size);
 }
+
 .code {
   grid-area: code;
   display: flex;
@@ -99,4 +101,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--example-color);
+  width: var(--code-width);
+  justify-self: center;
+  border-radius: var(--code-border-radius);
+  box-shadow: var(--shadows);
 }
