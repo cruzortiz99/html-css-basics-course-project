@@ -1,10 +1,26 @@
+:root {
+  --page-color: aliceblue;
+  --page-section-space-between: 20px;
+  --font-size: 16px;
+  --text-padding: 15px 0px 15px 0px;
+  --paragraphs-width: 80%;
+  --theory-header-margin: 0px 0px 15px 0px;
+  --theory-line-height: calc(var(--font-size) * 1.5);
+  --code-border-radius: 10px;
+  --code-width: 90%;
+  --code-color: lightgray;
+  --shadows: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+  --html-tag-color: blue;
+  --html-attribute-color: red;
+  --code-comment-color: gray;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
-  background-color: aliceblue;
+  background-color: var(--page-color);
 }
 body {
   min-height: 100vh;
@@ -14,55 +30,58 @@ body {
     'code'
     'example';
   grid-template-rows: auto min-content auto;
+  grid-gap: var(--page-section-space-between);
 }
 .theory {
   grid-area: theory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--text-padding);
+}
+.theory h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: var(--theory-header-margin);
+}
+.paragraphs {
+  width: var(--paragraphs-width);
+}
+.paragraphs * {
+  line-height: var(--theory-line-height);
 }
 .code {
   grid-area: code;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: var(--code-border-radius);
 }
 .code pre {
-  width: 90%;
-  background-color: lightgray;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+  width: var(--code-width);
+  background-color: var(--code-color);
+  border-radius: var(--code-border-radius);
+  box-shadow: var(--shadows);
+  overflow-x: auto;
 }
-.example {
-  grid-area: example;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-h1 {
-  text-align: center;
-  text-transform: capitalize;
-}
-span {
-  width: 100%;
-  word-wrap: break-word;
-}
-.tag {
-  color: blue;
+.tag,
+.tag::before,
+.tag::after,
+.close-tag::before {
+  color: var(--html-tag-color);
 }
 .tag::before {
   content: '<';
-  color: blue;
 }
 .tag::after {
   content: '>';
-  color: blue;
 }
 .close-tag::before {
   content: '</';
-  color: blue;
 }
 .comment-tag,
 .comment-tag span {
-  color: gray;
+  color: var(--code-comment-color);
 }
 .comment-tag::before {
   content: '<!--';
@@ -71,5 +90,12 @@ span {
   content: '-->';
 }
 .tag-attribute {
-  color: red;
+  color: var(--html-attribute-color);
+}
+
+.example {
+  grid-area: example;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

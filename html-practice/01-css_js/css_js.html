@@ -15,27 +15,43 @@
 <body>
   <div class="theory">
     <h1>CSS y JS dentro del HTML</h1>
+    <div class="paragraphs">
+      <p>La posición en donde se establece el estilo y la lógica de la página influye en las capacidades que vamos a
+        tener
+        y en como se desempeña la página</p>
+      <p>Hay dos lugares principalmente donde se pueden establecer tanto el CSS como JS:</p>
+      <ol>
+        <li>En el <span class="tag">head</span>: se carga antes que los elementos del body, bueno para el estilo ya que
+          se asegura que la página
+          siempre posea las condiciones de estilos especificadas. Sin embargo, malo para el JS ya que los elementos a
+          los
+          que queremos acceder, no existen todavía</li>
+        <li>Después del <span class="tag">body</span>: es el más recomendado, ya que los elementos de la vista ya
+          existen y se pueden acceder. Sin embargo, de haber problemas con la descarga de la página, esta puede cargar
+          todos los elementos pero no el estilo, esto se toma en consideración en proyectos grandes</li>
+      </ol>
+    </div>
   </div>
   <div class="code">
     <pre>
       <span class="tag">head</span>
         <span class="tag">meta <span class="tag-attribute">charset="UTF-8"</span></span>
-        <span class="tag">meta <span class="tag-attribute">name="viewport" content="width=device-width,
-            initial-scale=1.0"</span></span>
+        <span class="tag">meta <span class="tag-attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span></span>
         <span class="tag">meta <span class="tag-attribute">http-equiv="X-UA-Compatible" content="ie=edge"</span></span>
         <span class="tag">title</span> CSS y JS <span class="tag close-tag">title</span>
-        <span class="comment-tag"><span class="tag">link <span class="tag-attribute">rel="stylesheet"
-              href="./css_js.css"</span></span></span>
+        <span class="comment-tag"><span class="tag">link <span class="tag-attribute">rel="stylesheet" href="./css_js.css"</span></span></span>
         <span class="comment-tag">No funciona bien declarado acá</span>
         <span class="comment-tag"><span class="tag">script <span
               class="tag-attribute">src="./css_js.js"</span></span><span class="tag close-tag">script</span></span>
-        <span class="tag close-tag">head</span>
-        <span class="tag">body</span>
+      <span class="tag close-tag">head</span>
+
+      <span class="tag">body</span>
         <span class="tag">div <span class="tag-attribute">id="app"</span></span><span class="tag close-tag">div</span>
-        <span class="tag close-tag">body</span>
-        <span class="tag">link <span class="tag-attribute">rel="stylesheet" href="./css_js.css"</span></span>
-        <span class="comment-tag">Se recomienda acá</span>
-        <span class="tag">script <span class="tag-attribute">src="./css_js.js"</span></span><span
+      <span class="tag close-tag">body</span>
+
+      <span class="tag">link <span class="tag-attribute">rel="stylesheet" href="./css_js.css"</span></span>
+      <span class="comment-tag">Se recomienda acá</span>
+      <span class="tag">script <span class="tag-attribute">src="./css_js.js"</span></span><span
         class="tag close-tag">script</span>
       <span class="tag close-tag">head</span>
     </pre>
