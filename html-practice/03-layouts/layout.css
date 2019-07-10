@@ -1,16 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  height: 100%;
-}
-html {
-  background-color: darkblue;
-}
-body {
-  height: 100vh;
-  width: 100vw;
+@import '../../public/css/components/content.css';
+.container {
+  height: 80%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 4fr auto;
   grid-template-rows: 30vh 40px auto auto 40px;
