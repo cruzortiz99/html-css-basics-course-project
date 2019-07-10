@@ -107,4 +107,5 @@ body {
   justify-self: center;
   border-radius: var(--code-border-radius);
   box-shadow: var(--shadows);
+  padding: var(--content-padding);
 }

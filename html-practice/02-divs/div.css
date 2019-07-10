@@ -5,7 +5,7 @@
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 4fr auto;
-  grid-template-rows: 30vh 40px auto auto 40px;
+  grid-template-rows: 15vh 40px auto auto 40px;
   grid-template-areas:
     'header header header'
     'nav nav nav'
