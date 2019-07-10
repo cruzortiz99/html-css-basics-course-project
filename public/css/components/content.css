@@ -49,6 +49,7 @@ body {
 }
 .paragraphs * {
   line-height: var(--theory-line-height);
+  font-size: var(--font-size);
 }
 .code {
   grid-area: code;
