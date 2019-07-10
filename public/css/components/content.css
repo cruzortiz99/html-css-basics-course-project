@@ -61,6 +61,7 @@ body {
   border-radius: var(--code-border-radius);
 }
 .code pre {
+  padding: var(--content-padding);
   width: var(--code-width);
   background-color: var(--code-color);
   border-radius: var(--code-border-radius);
