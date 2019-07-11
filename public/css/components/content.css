@@ -31,7 +31,7 @@ body {
     'example'
     'theory'
     'code';
-  grid-template-rows: auto min-content auto;
+  grid-template-rows: 33vh min-content auto;
   grid-gap: var(--page-section-space-between);
 }
 .theory {
@@ -108,4 +108,5 @@ body {
   border-radius: var(--code-border-radius);
   box-shadow: var(--shadows);
   padding: var(--content-padding);
+  overflow-y: auto;
 }
