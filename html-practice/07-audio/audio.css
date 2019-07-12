@@ -1,0 +1,6 @@
+@import '../../public/css/components/content.css';
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

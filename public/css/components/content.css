@@ -110,3 +110,7 @@ body {
   padding: var(--content-padding);
   overflow-y: auto;
 }
+.container {
+  width: 80%;
+  height: 80%;
+}

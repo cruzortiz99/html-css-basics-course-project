@@ -1,7 +1,5 @@
 @import '../../public/css/components/content.css';
 .container {
-  height: 90%;
-  width: 90%;
   display: grid;
   grid-template-columns: 1fr 4fr auto;
   grid-template-rows: 15vh 40px auto auto 40px;
