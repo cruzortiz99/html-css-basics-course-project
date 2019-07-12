@@ -5,13 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./video.css">
   <title>Videos</title>
 </head>
 
 <body>
-  <video controls>
-    <source type="video/mp4" srcset="video.mp4">
-  </video>
+  <div class="theory">
+    <h1>Videos</h1>
+    <div class="paragraphs">
+      <p>
+        Los vídeos pueden ser parte importan del repertorio de una página web. Sin embargo, su despliegue tiende a ser
+        algo complejo. HTML5, facilita en gran medida la exposición de videos pero solo para algunos formatos como MP4.
+      </p>
+    </div>
+  </div>
+  <div class="code">
+    <pre>
+      <span class="tag">video <span class="tag-attribute">controls</span></span>
+        <span class="tag">source <span class="tag-attribute">type="video/mp4" srcset="video.mp4"</span></span>
+      <span class="tag close-tag">video</span>
+    </pre>
+  </div>
+  <div class="example">
+    <video controls>
+      <source type="video/mp4" srcset="video.mp4">
+    </video>
+  </div>
 </body>
 
 </html>
