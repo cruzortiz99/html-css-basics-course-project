@@ -10,7 +10,67 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div class="theory">
+    <h1>Animaciones</h1>
+  </div>
+  <div class="code">
+    <pre>
+        <span class="tag-attribute">.container > div </span>{
+          background-color: lightblue;
+          border-width: 2px;
+          border-style: solid;
+          width: 100px;
+          height: 50px;
+          position: relative;
+          animation: moving;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: backwards;
+          transition: width 1s, height 1s;
+        }
+        <span class="tag-attribute">.container > div:hover </span>{
+          width: 0px;
+          height: 0px;
+        }
+        <span class="tag-attribute">@keyframes moving </span>{
+          <span class="tag-attribute">0% </span>{
+            top: -40px;
+            left: -300px;
+          }
+          <span class="tag-attribute">25% </span>{
+            top: -40px;
+            left: 300px;
+            background-color: darkred;
+            transform: rotate(180deg);
+          }
+          <span class="tag-attribute">50% </span>{
+            top: 40px;
+            left: 300px;
+            background-color: darkgreen;
+            transform: rotate(180deg);
+          }
+          <span class="tag-attribute">75% </span>{
+            top: 40px;
+            left: -300px;
+            background-color: darkblue;
+            transform: rotate(0deg);
+          }
+          <span class="tag-attribute">100% </span>{
+            top: -40px;
+            left: -300px;
+            background-color: lightblue;
+            /* transform: rotate(-90deg); */
+          }
+        }
+        
+    </pre>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div id="app"></div>
+    </div>
+  </div>
 </body>
 
 </html>

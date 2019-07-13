@@ -17,6 +17,15 @@
 html {
   background-color: darkblue;
 }
+div {
+  background-color: lightblue;
+  border-width: 2px;
+  border-style: solid;
+}
+a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
 body {
   display: grid;
   min-height: 100vh;
@@ -26,15 +35,6 @@ body {
     'main'
     'footer';
   grid-template-rows: 15vh 40px auto 40px;
-}
-div {
-  background-color: lightblue;
-  border-width: 2px;
-  border-style: solid;
-}
-a {
-  text-decoration: none;
-  color: var(--main-font-color);
 }
 .header {
   display: flex;
