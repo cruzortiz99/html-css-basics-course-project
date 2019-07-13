@@ -10,10 +10,35 @@
 </head>
 
 <body>
-  <div id="app">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam corporis aliquid suscipit cupiditate
-      odit harum fuga provident consequatur iusto, adipisci, incidunt eveniet. Voluptates deserunt itaque neque amet
-      vel. Voluptate.</p>
+  <div class="theory">
+    <h1>Pseudo-elementos</h1>
+  </div>
+  <div class="code">
+    <pre>
+      <span class="tag-attribute">p::before</span> {
+        content: '--';
+        color: red;
+      }
+      <span class="tag-attribute">p::after</span> {
+        content: '**';
+        color: blue;
+      }
+      <span class="tag-attribute">p::first-letter</span> {
+        font-size: 46px;
+      }
+      <span class="tag-attribute">p::first-line</span> {
+        font-size: 24px;
+      }
+    </pre>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div id="app">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam corporis aliquid suscipit cupiditate
+          odit harum fuga provident consequatur iusto, adipisci, incidunt eveniet. Voluptates deserunt itaque neque amet
+          vel. Voluptate.</p>
+      </div>
+    </div>
   </div>
 </body>
 

@@ -1,22 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-html {
-  background-color: darkblue;
-}
-body {
+@import '../../public/css/components/content.css';
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-div {
-  background-color: lightblue;
-  height: 100px;
-  width: 100px;
 }
 #app {
   background-color: green;
@@ -28,8 +15,11 @@ div[segunda='segunda'] {
   border-style: groove;
   border-width: 10px;
 }
-body > div {
+.container > div {
   border-radius: 50%;
+  background-color: lightblue;
+  height: 100px;
+  width: 100px;
 }
 .primera-clase ~ .segunda-clase {
   align-self: flex-start;

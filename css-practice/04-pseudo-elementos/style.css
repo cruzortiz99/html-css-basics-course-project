@@ -1,34 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-html {
-  background-color: darkblue;
-}
-body {
+@import '../../public/css/components/content.css';
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-div {
+.container > div {
   background-color: lightblue;
   height: auto;
-  width: 100px;
+  width: 80%;
 }
-p::before {
+.container p::before {
   content: '--';
   color: red;
 }
-p::after {
+.container p::after {
   content: '**';
   color: blue;
 }
-p::first-letter {
-  font-size: 16px;
+.container p::first-letter {
+  font-size: 46px;
 }
-p::first-line {
-  font-size: 14px;
+.container p::first-line {
+  font-size: 24px;
 }

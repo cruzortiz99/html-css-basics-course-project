@@ -1,30 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-html {
-  background-color: darkblue;
-}
-body {
+@import '../../public/css/components/content.css';
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-div {
+.container > div {
   background-color: lightblue;
   height: 100px;
   width: 100px;
 }
-div:hover {
-  width: 200px;
-  height: 200px;
+.container > div:hover {
+  width: 120px;
+  height: 120px;
 }
-div:first-child {
+.container > div:first-child {
   background-color: green;
 }
-div:last-child {
+.container > div:last-child {
   background-color: yellowgreen;
 }

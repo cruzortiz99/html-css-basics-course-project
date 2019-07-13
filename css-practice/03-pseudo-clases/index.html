@@ -10,12 +10,37 @@
 </head>
 
 <body>
-  <div id="app"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-
+  <div class="theory">
+    <h1>Pseudo-clases</h1>
+  </div>
+  <div class="code">
+    <pre>
+      <span class="tag-attribute">div </span> {
+        background-color: lightblue;
+        height: 100px;
+        width: 100px;
+      }
+      <span class="tag-attribute">div:hover</span> {
+        width: 120px;
+        height: 120px;
+      }
+      <span class="tag-attribute">div:first-child </span> {
+        background-color: green;
+      }
+      <span class="tag-attribute">div:last-child</span> {
+        background-color: green;
+      }
+    </pre>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div id="app"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -10,7 +10,28 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div class="theory">
+    <h1>CSS Variables</h1>
+  </div>
+  <div class="code">
+    <pre>
+      <span class="tag-attribute">:root</span> {
+        --div-color: lightblue;
+        --box-size-width: 30vw;
+        --box-size-height: 30vh;
+      }
+      <span class="tag-attribute">#app</span> {
+        height: var(--box-size-height);
+        width: var(--box-size-width);
+        background-color: var(--div-color);
+      }
+    </pre>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div id="app"></div>
+    </div>
+  </div>
 </body>
 
 </html>
