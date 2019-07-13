@@ -1,27 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-html {
-  background-color: darkblue;
-}
-body {
+@import '../../public/css/components/content.css';
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-div {
+.container div {
   background-color: lightblue;
   height: 100px;
   width: 100px;
 }
-div:nth-child(4n + 2) {
+.container div:nth-child(4n + 2) {
   align-self: flex-start;
 }
-div:nth-child(4n + 4) {
+.container div:nth-child(4n + 4) {
   align-self: flex-end;
 }

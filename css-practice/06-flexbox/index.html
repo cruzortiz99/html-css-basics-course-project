@@ -10,12 +10,40 @@
 </head>
 
 <body>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div class="theory">
+    <h1>Flexbox</h1>
+  </div>
+  <div class="code">
+    <pre>
+      <span class="tag-attribute">.container </span>{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      <span class="tag-attribute">.container div </span>{
+        background-color: lightblue;
+        height: 100px;
+        width: 100px;
+      }
+      <span class="tag-attribute">.container div:nth-child(4n + 2) </span>{
+        align-self: flex-start;
+      }
+      <span class="tag-attribute">.container div:nth-child(4n + 4) </span>{
+        align-self: flex-end;
+      }
+    </pre>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 </body>
 
 </html>
