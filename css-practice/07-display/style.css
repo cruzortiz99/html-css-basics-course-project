@@ -1,24 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-html {
-  background-color: darkblue;
-}
-body {
+@import '../../public/css/components/content.css';
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-div {
+.container div {
   width: 300px;
   height: auto;
   background-color: lightblue;
 }
-ul > li {
-  display: block;
+.container ul > li {
+  display: inline;
   font-size: 3vh;
 }

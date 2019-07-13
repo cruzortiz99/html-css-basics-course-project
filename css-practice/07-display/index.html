@@ -10,12 +10,37 @@
 </head>
 
 <body>
-  <div>
-    <ul>
-      <li>Home</li>
-      <li>Main</li>
-      <li>Exit</li>
-    </ul>
+  <div class="theory">
+    <h1>Display</h1>
+  </div>
+  <div class="code">
+    <pre>
+      <span class="tag-attribute">.container </span>{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      <span class="tag-attribute">.container div </span>{
+        width: 300px;
+        height: auto;
+        background-color: lightblue;
+      }
+      <span class="tag-attribute">.container ul > li </span>{
+        display: inline;
+        font-size: 3vh;
+      }
+    </pre>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>Main</li>
+          <li>Exit</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 
