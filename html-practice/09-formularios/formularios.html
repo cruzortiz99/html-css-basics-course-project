@@ -12,8 +12,30 @@
 <body>
   <div class="theory">
     <h1>Formularios</h1>
+    <div class="paragraphs">
+      <p>Los formularios son de suma importancia para las páginas o aplicaciones web. Se pueden usar para el registro de
+        usuario, entrar en comunicación con el negocio, hacer algún pedido, etc.</p>
+      <p>Los formularios se generan en el HTML, sin embargo, los datos enviados deben ser manejados por JS y por alguna
+        aplicación en el servidor</p>
+    </div>
   </div>
-  <div class="code"></div>
+  <div class="code">
+    <pre>
+      <span class="tag">form <span class="tag-attribute">action="#" method="post" style="display: flex; flex-direction: column</span>"</span>
+        <span class="tag">label <span class="tag-attribute">for="name"</span></span>Nombre<span class="tag close-tag">label</span>
+        <span class="tag">input <span class="tag-attribute">type="text" name="name" required autofocus</span>/</span>
+        <span class="tag">label <span class="tag-attribute">for="mail</span>"</span>Correo<span class="tag close-tag">label</span>
+        <span class="tag">input <span class="tag-attribute">type="email" name="mail" required</span>/</span>
+        <span class="tag">label <span class="tag-attribute">for="birthDate"</span></span>Fecha de nacimiento<span class="tag close-tag">label</span>
+        <span class="tag">input <span class="tag-attribute">type="date" name="birthDate"</span>/</span>
+        <span class="tag">label <span class="tag-attribute">for="ci"</span></span>Cédula<span class="tag close-tag">label</span>
+        <span class="tag">input <span class="tag-attribute">type="number" min="5000000" max="40000000" required</span>/</span>
+        <span class="tag">label <span class="tag-attribute">for="remark"</span></span>Comentario<span class="tag close-tag">label</span>
+        <span class="tag">textarea <span class="tag-attribute">name="remark" cols="30" rows="30"</span></span><span class="tag close-tag">textarea</span>
+        <span class="tag">button <span class="tag-attribute">type="submit</span>"</span>Enviar<span class="tag close-tag">button</span>
+      <span class="tag close-tag">form</span>
+    </pre>
+  </div>
   <div class="example">
     <div class="container">
       <form action="#" method="post" style="display: flex; flex-direction: column">
