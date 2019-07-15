@@ -10,7 +10,7 @@
   width: 80%;
 }
 .container p::before {
-  content: '--';
+  content: '>';
   color: red;
 }
 .container p::after {

@@ -12,11 +12,16 @@
 <body>
   <div class="theory">
     <h1>Pseudo-elementos</h1>
+    <div class="paragraphs">
+      <p>Los pseudo-elementos, son elementos HTML que se pueden crear pero que no explícitamente declarados en el HTML,
+        se usan más que nada en párrafos para dar estilos más específicos al texto. Por ejemplo a la primera letra o
+        primera linea</p>
+    </div>
   </div>
   <div class="code">
     <pre>
       <span class="tag-attribute">p::before</span> {
-        content: '--';
+        content: '>';
         color: red;
       }
       <span class="tag-attribute">p::after</span> {

@@ -12,25 +12,62 @@
 <body>
   <div class="theory">
     <h1>CSS GRID</h1>
+    <div class="paragraphs">
+      <p>Las CSS grid son una forma de especificar el layout de la página. Permite el posicionamiento en 2D de los
+        elementos de una página</p>
+      <p>De las virtudes más resaltantes, además de el posicionamiento 2D, es lo explicito del posiciones o el layout,
+        lo flexible de la maya (GRID) y la capacidad de manejar el espácio en blanco</p>
+    </div>
   </div>
   <div class="code">
     <pre>
-      <span class="tag-attribute">.container </span> {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 10px;
-      }
-      <span class="tag-attribute">.container > div</span> {
-        background-color: lightblue;
-        width: 100%;
-        height: 100%;
-      }
+        <span class="tag-attribute">.container</span> {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+        <span class="tag-attribute">.container > div</span> {
+          background-color: lightblue;
+          width: 100%;
+          height: 100%;
+        }
+        <span class="tag-attribute">.container > div:nth-child(1)</span> {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+        }
+        <span class="tag-attribute">.container > div:nth-child(2)</span> {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+        }
+        <span class="tag-attribute">.container > div:nth-child(3)</span> {
+          grid-column: 3 / 4;
+          grid-row: 1 / 2;
+        }
+        <span class="tag-attribute">.container > div:nth-child(4)</span> {
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+        }
+        <span class="tag-attribute">.container > div:nth-child(5)</span> {
+          grid-column: 3 / 4;
+          grid-row: 2 / 3;
+        }
+        <span class="tag-attribute">.container > div:nth-child(6)</span> {
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+        }
+        <span class="tag-attribute">.container > div:nth-child(7)</span> {
+          grid-column: 2 / 3;
+          grid-row: 3 / 4;
+        }
+        <span class="tag-attribute">.container > div:nth-child(8)</span> {
+          grid-column: 3 / 4;
+          grid-row: 3 / 4;
+        }
     </pre>
   </div>
   <div class="example">
     <div class="container">
-      <div></div>
       <div></div>
       <div></div>
       <div></div>
