@@ -29,7 +29,7 @@
         <span class="tag">label <span class="tag-attribute">for="birthDate"</span></span>Fecha de nacimiento<span class="tag close-tag">label</span>
         <span class="tag">input <span class="tag-attribute">type="date" name="birthDate"</span>/</span>
         <span class="tag">label <span class="tag-attribute">for="ci"</span></span>Cédula<span class="tag close-tag">label</span>
-        <span class="tag">input <span class="tag-attribute">type="number" min="5000000" max="40000000" required</span>/</span>
+        <span class="tag">input <span class="tag-attribute">name="ci" type="number" min="5000000" max="40000000" required</span>/</span>
         <span class="tag">label <span class="tag-attribute">for="remark"</span></span>Comentario<span class="tag close-tag">label</span>
         <span class="tag">textarea <span class="tag-attribute">name="remark" cols="30" rows="30"</span></span><span class="tag close-tag">textarea</span>
         <span class="tag">button <span class="tag-attribute">type="submit</span>"</span>Enviar<span class="tag close-tag">button</span>
@@ -38,7 +38,7 @@
   </div>
   <div class="example">
     <div class="container">
-      <form action="#" method="post" style="display: flex; flex-direction: column">
+      <form name="myForm" action="#" method="post" style="display: flex; flex-direction: column">
         <label for="name">Nombre</label>
         <input type="text" name="name" required autofocus />
         <label for="mail">Correo</label>
@@ -46,7 +46,7 @@
         <label for="birthDate">Fecha de nacimiento</label>
         <input type="date" name="birthDate">
         <label for="ci">Cédula</label>
-        <input type="number" min="5000000" max="40000000" required>
+        <input name="ci" type="number" min="5000000" max="40000000" required>
         <label for="remark">Comentario</label>
         <textarea name="remark" cols="30" rows="30"></textarea>
         <button type="submit">Enviar</button>
@@ -54,5 +54,21 @@
     </div>
   </div>
 </body>
+<script>
+  /**
+   * @param {Event} event
+   */
+  const stopping = function (event) {
+    event.preventDefault()
+    let formValue = {}
+    for (const key in event.target) {
+      if (+key && +key !== event.target.length - 1 || +key === 0) {
+        formValue[event.target[key].getAttribute('name')] = event.target[key].value
+      }
+    }
+    console.log(formValue)
+  }
+  document.querySelector('form[name=\'myForm\']').addEventListener('submit', stopping, false)
+</script>
 
 </html>

@@ -25,6 +25,10 @@
   width: 0px;
   height: 0px;
 }
+.font-big {
+  font-size: calc(2 * var(--font-size));
+  font-weight: bold;
+}
 @keyframes moving {
   0% {
     top: -40px;

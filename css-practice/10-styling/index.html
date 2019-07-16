@@ -13,21 +13,48 @@
 <body>
   <div class="theory">
     <h1>Styling</h1>
+    <div class="paragraphs">
+      <p>Adicional a lo anteriormente presentado, CSS permite añadir estilo para casi cualquier cosa, la imaginación es
+        el límite. Si se tiene un buen dominio del HTML y el CSS se puede realizar casi cualquier efecto imaginable.</p>
+    </div>
   </div>
   <div class="code">
     <pre>
-        <span class="tag-attribute">.container > div</span> {
+        <span class="tag-attribute">.container > div </span>{
           background-color: lightblue;
           min-height: 100px;
           height: auto;
           width: 30vw;
           padding: 15px;
-          border-radius: 50px;
+          border-radius: 50px 50px 0px 50px;
           border-style: solid;
           border-width: 2px;
           box-shadow: rgba(0, 0, 0, 0.8) 0px 30px 40px;
           overflow-y: auto;
           overflow-x: hidden;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 20px;
+          direction: rtl;
+        }
+        <span class="tag-attribute">.container > div::-webkit-scrollbar </span>{
+          width: 8px;
+          position: absolute;
+          right: 0px;
+        }
+        <span class="tag-attribute">.container > div::-webkit-scrollbar-track </span>{
+          background-color: white;
+          box-shadow: inset black 0 0 3px;
+          border-radius: 25%;
+        }
+        <span class="tag-attribute">.container > div::-webkit-scrollbar-thumb </span>{
+          background: linear-gradient(
+            0deg,
+            black 0%,
+            gray 5%,
+            #ff8800 30%,
+            #60f479 90%
+          );
+          border-radius: 25%;
         }
       </pre>
   </div>

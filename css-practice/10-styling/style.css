@@ -11,10 +11,33 @@
   height: auto;
   width: 30vw;
   padding: 15px;
-  border-radius: 50px;
+  border-radius: 50px 50px 0px 50px;
   border-style: solid;
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 30px 40px;
   overflow-y: auto;
   overflow-x: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  direction: rtl;
+}
+.container > div::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+  right: 0px;
+}
+.container > div::-webkit-scrollbar-track {
+  background-color: white;
+  box-shadow: inset black 0 0 3px;
+  border-radius: 25%;
+}
+.container > div::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    0deg,
+    black 0%,
+    gray 5%,
+    #ff8800 30%,
+    #60f479 90%
+  );
+  border-radius: 25%;
 }
