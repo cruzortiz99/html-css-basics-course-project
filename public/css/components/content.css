@@ -1,7 +1,7 @@
 :root {
   --page-color: aliceblue;
   --page-section-space-between: 20px;
-  --font-size: 16px;
+  --font-size: 24px;
   --content-padding: 15px 0px 15px 0px;
   --paragraphs-width: 80%;
   --theory-header-margin: 0px 0px 15px 0px;
@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 html {
   background-color: var(--page-color);

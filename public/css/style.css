@@ -5,6 +5,7 @@
   text-decoration: none;
   color: white;
   overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
 }
 html {
   background-color: dodgerblue;
@@ -28,6 +29,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
   z-index: 1;
 }
+.header > h1 {
+  font-size: 50px;
+}
 .nav {
   grid-area: nav;
   padding-top: 10px;
@@ -44,6 +48,9 @@ body {
   width: 100%;
   border: none;
 }
+.nav > h3 {
+  font-size: 36px;
+}
 .nav > ul {
   display: flex;
   flex-direction: column;
@@ -51,6 +58,7 @@ body {
 .nav > ul li {
   padding-left: 15px;
   min-height: 30px;
+  font-size: 24px;
 }
 .nav > ul li:hover {
   background-color: darkblue;
