@@ -2,6 +2,7 @@
   --header-font-size: 52px;
   --nav-title-font-size: 30px;
   --nav-option-font-size: 24px;
+  --font-color: rgb(40, 40, 40);
 }
 * {
   margin: 0px;
@@ -43,7 +44,7 @@ body {
   overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px;
   z-index: 2;
-  background-color: #bce0ff;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .main {
   grid-area: main;
@@ -62,7 +63,7 @@ body {
   text-align: center;
 }
 .nav * {
-  color: black;
+  color: var(--font-color);
 }
 .nav > ul {
   display: flex;
@@ -74,7 +75,7 @@ body {
   font-size: var(--nav-option-font-size);
 }
 .nav > ul li:hover {
-  background-color: darkblue;
+  background-color: dodgerblue;
 }
 .nav > ul li:hover a {
   color: white;

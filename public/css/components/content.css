@@ -14,13 +14,15 @@
   --shadows: rgba(0, 0, 0, 0.3) 0px 2px 4px;
   --html-tag-color: blue;
   --html-attribute-color: red;
-  --example-color: rgba(0, 0, 255, 0.7);
+  --example-color: rgba(255, 0, 149, 0.068);
+  --font-color: rgb(40, 40, 40);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
+  color: var(--font-color);
 }
 html {
   background-color: var(--page-color);
