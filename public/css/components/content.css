@@ -1,7 +1,8 @@
 :root {
   --page-color: aliceblue;
   --page-section-space-between: 20px;
-  --font-size: 24px;
+  --font-size: 20px;
+  --header-font-size: 36px;
   --content-padding: 15px 0px 15px 0px;
   --paragraphs-width: 80%;
   --theory-header-margin: 0px 0px 15px 0px;
@@ -32,7 +33,7 @@ body {
     'example'
     'theory'
     'code';
-  grid-template-rows: 33vh min-content auto;
+  grid-template-rows: 33vh min-content min-content;
   grid-gap: var(--page-section-space-between);
 }
 .theory {
@@ -45,6 +46,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: var(--theory-header-margin);
+  font-size: var(--header-font-size);
 }
 .paragraphs {
   width: var(--paragraphs-width);
@@ -67,6 +69,7 @@ body {
   background-color: var(--code-color);
   border-radius: var(--code-border-radius);
   box-shadow: var(--shadows);
+  font-size: calc(0.8 * var(--font-size));
   overflow-x: auto;
 }
 .tag,
@@ -85,7 +88,8 @@ body {
   content: '</';
 }
 .comment-tag,
-.comment-tag span {
+.comment-tag span,
+.js-comment {
   color: var(--code-comment-color);
 }
 .comment-tag::before {
@@ -96,6 +100,12 @@ body {
 }
 .tag-attribute {
   color: var(--html-attribute-color);
+}
+.js-comment::before {
+  content: '/*';
+}
+.js-comment::after {
+  content: '*/';
 }
 
 .example {
@@ -114,6 +124,12 @@ body {
 .container {
   width: 80%;
   height: 80%;
+}
+.container p,
+.container div,
+.container form *,
+.container table * {
+  font-size: calc(0.8 * var(--font-size));
 }
 .example > a {
   font-size: 46px;

@@ -1,1 +1,4 @@
 @import '../../public/css/components/content.css';
+p {
+  font-size: calc(1.2 * var(--font-size));
+}

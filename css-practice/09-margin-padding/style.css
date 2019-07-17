@@ -13,3 +13,6 @@
   margin: 40px 0px 10px 0px;
   padding: 50px;
 }
+.container * {
+  font-weight: bold;
+}

@@ -36,6 +36,10 @@ body {
     'footer';
   grid-template-rows: 15vh 40px auto 40px;
 }
+body * {
+  font-size: calc(1.2 * var(--font-size));
+  font-weight: bold;
+}
 .header {
   display: flex;
   justify-content: center;

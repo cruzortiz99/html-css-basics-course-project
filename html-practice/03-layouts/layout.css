@@ -11,6 +11,9 @@
     'footer footer footer';
   grid-gap: 10px;
 }
+.container > * {
+  font-weight: bold;
+}
 header {
   background-color: lightblue;
   grid-area: header;

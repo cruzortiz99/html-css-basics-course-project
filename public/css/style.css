@@ -1,3 +1,8 @@
+:root {
+  --header-font-size: 52px;
+  --nav-title-font-size: 30px;
+  --nav-option-font-size: 24px;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -17,7 +22,7 @@ body {
   grid-template-areas:
     'header header'
     'nav main';
-  grid-template-columns: 20vw;
+  grid-template-columns: minmax(250px, min-content) auto;
   grid-template-rows: 15vh auto;
 }
 .header {
@@ -30,14 +35,15 @@ body {
   z-index: 1;
 }
 .header > h1 {
-  font-size: 50px;
+  font-size: var(--header-font-size);
 }
 .nav {
   grid-area: nav;
   padding-top: 10px;
-  overflow-y: auto;
+  overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px;
   z-index: 2;
+  background-color: #bce0ff;
 }
 .main {
   grid-area: main;
@@ -49,7 +55,14 @@ body {
   border: none;
 }
 .nav > h3 {
-  font-size: 36px;
+  font-size: var(--nav-title-font-size);
+  margin: 15px 0px;
+  text-transform: capitalize;
+  min-height: 30px;
+  text-align: center;
+}
+.nav * {
+  color: black;
 }
 .nav > ul {
   display: flex;
@@ -58,13 +71,11 @@ body {
 .nav > ul li {
   padding-left: 15px;
   min-height: 30px;
-  font-size: 24px;
+  font-size: var(--nav-option-font-size);
 }
 .nav > ul li:hover {
   background-color: darkblue;
 }
-.nav h3 {
-  text-transform: capitalize;
-  min-height: 30px;
-  text-align: center;
+.nav > ul li:hover a {
+  color: white;
 }
